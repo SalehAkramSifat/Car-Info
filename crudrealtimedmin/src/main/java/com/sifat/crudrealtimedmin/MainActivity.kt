@@ -16,10 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.upload.setOnClickListener {
-            startActivity(Intent(this, UploadActivity::class.java))
-            finish()
-        }
+
 
     }
 }
