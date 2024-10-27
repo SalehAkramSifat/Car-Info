@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ed_bac"
         android:hint="Search Vehicle Number"
+        android:inputType="text"
         android:paddingHorizontal="15dp"
         android:paddingVertical="10dp"
         android:layout_marginHorizontal="50dp"
@@ -58,10 +59,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Owner Name"
+                android:text="Owner Name:"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="#1E7DDE"
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/TVownerName"
@@ -87,10 +88,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Vehicle Brand"
+                android:text="Vehicle Brand:"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="#1E7DDE"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/TVvehicleBrand"
@@ -100,6 +101,7 @@
                 android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -117,10 +119,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Vehicle RTO"
+                android:text="Vehicle RTO:"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textColor="#1E7DDE"
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/TVvehicleRto"

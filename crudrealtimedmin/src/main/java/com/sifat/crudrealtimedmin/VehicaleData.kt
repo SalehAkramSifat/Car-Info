@@ -5,5 +5,4 @@ data class VehicaleData(
     val VehicleBrand: String? = null,
     val VehicleRto: String? = null,
     val VehicleNumber: String? = null
-
 )
