@@ -6,12 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".UploadActivity">
-
+    tools:context=".UpdateActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="vehicle Info"
+        android:text="Info Update"
         android:textSize="60dp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -20,10 +19,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <EditText
-        android:id="@+id/vehicle_owner"
+        android:id="@+id/vehicleNumberUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Owner Name"
+        android:hint="Enter Vehicle Number"
         android:background="@drawable/ed_bac"
         android:paddingHorizontal="15dp"
         android:paddingVertical="10dp"
@@ -31,10 +30,10 @@
         android:layout_marginHorizontal="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/vehicle_brand"/>
+        app:layout_constraintBottom_toTopOf="@id/vehicleBrandUpdate"/>
 
     <EditText
-        android:id="@+id/vehicle_brand"
+        android:id="@+id/vehicleBrandUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Vehicle Brand"
@@ -47,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
     <EditText
-        android:id="@+id/vehicle_rto"
+        android:id="@+id/vehicleRtoUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Vehicle RTO"
@@ -58,31 +57,33 @@
         android:layout_marginHorizontal="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vehicle_brand"/>
+        app:layout_constraintTop_toBottomOf="@id/vehicleBrandUpdate"/>
+
     <EditText
-        android:id="@+id/vehicle_number"
+        android:id="@+id/vehicleownerUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Vehicle Number"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/ed_bac"
+        android:hint="Enter Owner Name"
         android:paddingHorizontal="15dp"
         android:paddingVertical="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vehicle_rto"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vehicleRtoUpdate" />
 
     <Button
-        android:id="@+id/upload"
+        android:id="@+id/update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Upload"
+        android:text="Update"
         android:textStyle="bold"
         android:textSize="20dp"
         android:textColor="#F5F6F2"
         android:layout_marginHorizontal="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/vehicle_number"/>
+        app:layout_constraintTop_toBottomOf="@id/vehicleownerUpdate"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
