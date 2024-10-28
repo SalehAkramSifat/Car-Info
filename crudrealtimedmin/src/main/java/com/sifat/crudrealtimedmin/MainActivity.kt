@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, UpdateActivity::class.java))
             finish()
         }
+        binding.delete.setOnClickListener {
+            startActivity(Intent(this, DeleteActivity::class.java))
+            finish()
+        }
 
 
 

@@ -21,10 +21,10 @@ class UpdateActivity : AppCompatActivity() {
 
         binding.update.setOnClickListener {
             val NumberUpdate = binding.vehicleNumberUpdate.text.toString()
-            val ownerUpdate = binding.vehicleOwnerUpdate.text.toString()
+            val ownerUpdate = binding.vehicleownerUpdate.text.toString()
             val brandUpdate = binding.vehicleBrandUpdate.text.toString()
             val rtoUpdate = binding.vehicleRtoUpdate.text.toString()
-
+            
             updateData(NumberUpdate, ownerUpdate, brandUpdate, rtoUpdate)
         }
     }
@@ -35,7 +35,7 @@ class UpdateActivity : AppCompatActivity() {
         databaseReference.child(vehicleNumber).setValue(vehicaleData)  // Using .setValue() to replace existing data
             .addOnSuccessListener {
                 binding.vehicleNumberUpdate.text.clear()
-                binding.vehicleOwnerUpdate.text.clear()
+                binding.vehicleownerUpdate.text.clear()
                 binding.vehicleBrandUpdate.text.clear()
                 binding.vehicleRtoUpdate.text.clear()
                 Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show()
